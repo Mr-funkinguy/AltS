@@ -17,16 +17,21 @@
 
 </head>
 
-<body onresize="resize()">
-
+<body onresize="resize2()">
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
     <iframe id="new" src="https://sz-games.github.io" style="border: none;" frameborder="0"></iframe>
     <script>
-        function resize() {
-            var ifs = document.getElementById('new')
-            ifs.style.width = window.innerWidth
-            ifs.style.height = window.innerHeight
+        var ifs = document.getElementById('new')
+
+        function resize2() {
+            ifs.style.width = window.innerWidth + 'px'
+            ifs.style.height = window.innerHeight + 'px'
         }
-        resize()
+        resize2()
     </script>
 </body>
 </html>
